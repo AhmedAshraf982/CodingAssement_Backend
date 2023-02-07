@@ -1,11 +1,11 @@
 import { Sequelize, DataTypes, Model } from "sequelize";
 const sequelize = new Sequelize(
   process.env.DBNAME,
-  process.env.DBUSERNAME,
-  process.env.DBPASSWORD,
+  process.env.DBCLOUDUSER,
+  process.env.DBCLOUDPASSWORD,
   {
-    host: process.env.DBHOST,
-    port: process.env.DBPORT,
+    host: process.env.DBCLOUDHOST,
+    port: process.env.DBCLOUDPORT,
     dialect: "mysql",
   }
 );
